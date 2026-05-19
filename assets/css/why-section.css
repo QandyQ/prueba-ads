@@ -1,0 +1,55 @@
+/* ============================================
+   ESTILOS DE LA SECCIÓN "¿POR QUÉ?"
+   ============================================ */
+
+.why-section {
+    padding: var(--spacing-2xl) var(--spacing-lg);
+    background: linear-gradient(135deg, var(--light) 0%, rgba(255, 107, 53, 0.05) 100%);
+}
+
+.why-content {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-xl);
+    align-items: center;
+}
+
+/* --- CONTENIDO DE TEXTO --- */
+.why-text h2 {
+    color: var(--primary);
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.why-list {
+    list-style: none;
+}
+
+.why-list li {
+    padding: 0.8rem 0;
+    padding-left: var(--spacing-lg);
+    position: relative;
+    color: var(--gray);
+    font-size: var(--font-size-lg);
+}
+
+.why-list li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: var(--secondary);
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+/* --- IMAGEN/ÍCONO --- */
+.why-image {
+    text-align: center;
+    font-size: 5rem;
+    background: linear-gradient(135deg, var(--secondary), var(--accent));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}

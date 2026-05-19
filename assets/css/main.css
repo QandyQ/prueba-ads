@@ -1,0 +1,16 @@
+/* ============================================
+   ARCHIVO PRINCIPAL - IMPORTA TODOS LOS ESTILOS
+   ============================================ */
+
+@import url('variables.css');
+@import url('base.css');
+@import url('icons.css');
+@import url('header.css');
+@import url('hero.css');
+@import url('features.css');
+@import url('categories.css');
+@import url('why-section.css');
+@import url('cta.css');
+@import url('article.css');
+@import url('footer.css');
+@import url('responsive.css');

@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Lo Curioso - Descubre cómo se fabrican las cosas. Explora los procesos detrás de los productos que usas a diario.">
+    <meta name="keywords" content="curiosidades, procesos, fabricación, educación, cómo se hacen las cosas">
+    <meta name="author" content="Lo Curioso">
+    <meta property="og:title" content="Lo Curioso - Descubre cómo se fabrican las cosas">
+    <meta property="og:description" content="Explora los fascinantes procesos de fabricación de productos cotidianos.">
+    <meta property="og:type" content="website">
+    
+    <title>Lo Curioso - Descubre cómo se fabrican las cosas</title>
+    
+    <!-- STYLESHEET PRINCIPAL -->
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+    <!-- ==================== HEADER ==================== -->
+    <header>
+        <div class="header-container">
+            <a href="#" class="logo">
+                <div class="logo-icon">LC</div>
+                <span>Lo Curioso</span>
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="#categorias">Categorías</a></li>
+                    <li><a href="#por-que">¿Por qué?</a></li>
+                    <li><a href="#footer">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ==================== HERO DESTACADO - ARTÍCULO PRINCIPAL ==================== -->
+    <section style="background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%); color: var(--white); padding: 3rem var(--spacing-lg);">
+        <div class="section-container">
+            <a href="pages/chocolate.html" style="text-decoration: none; color: inherit; display: block;">
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; align-items: center;">
+                    <div>
+                        <span style="background-color: rgba(255, 107, 53, 0.3); padding: 0.5rem 1rem; border-radius: 20px; font-size: 0.9rem; display: inline-flex; align-items: center; gap: 0.5rem;"><img src="assets/icons/pizza.svg" alt="" style="width: 1rem; height: 1rem;"> Alimentos</span>
+                        <h1 style="font-size: 2.5rem; margin: 1rem 0; font-weight: 800;">Descubre cómo se fabrican las cosas que usas cada día</h1>
+                        <p style="font-size: 1.1rem; opacity: 0.95; margin-bottom: 1.5rem;">Explora los procesos fascinantes detrás de los productos cotidianos. Desde la comida que comes hasta la tecnología que usas, aquí están las historias reales de cómo se hacen.</p>
+                        <div style="display: flex; gap: 2rem; flex-wrap: wrap; font-size: 0.95rem;">
+                            <span style="display: inline-flex; align-items: center; gap: 0.5rem;"><img src="assets/icons/calendar-days.svg" alt="" style="width: 1.1rem; height: 1.1rem;"> Hace 2 días</span>
+                            <span style="display: inline-flex; align-items: center; gap: 0.5rem;"><img src="assets/icons/clock.svg" alt="" style="width: 1.1rem; height: 1.1rem;"> 8 min lectura</span>
+                            <span style="display: inline-flex; align-items: center; gap: 0.5rem;"><img src="assets/icons/graduation-cap.svg" alt="" style="width: 1.1rem; height: 1.1rem;"> Educativo</span>
+                        </div>
+                    </div>
+                    <div style="background: rgba(255, 255, 255, 0.1); border-radius: var(--border-radius); padding: 0.75rem; backdrop-filter: blur(10px); overflow: hidden; min-height: 280px;">
+                        <video autoplay muted loop playsinline preload="auto" style="width: 100%; height: 100%; min-height: 260px; object-fit: cover; border-radius: calc(var(--border-radius) - 4px); display: block;">
+                            <source src="assets/videos/como hacer chocolate.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <!-- ==================== ARTÍCULOS DESTACADOS ==================== -->
+    <section style="padding: 3rem var(--spacing-lg); background-color: var(--white);">
+        <div class="section-container">
+            <h2 class="section-title">Artículos Destacados</h2>
+            <p class="section-subtitle">Selección de artículos que no te puedes perder</p>
+            
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem;">
+                <!-- Artículo Destacado 1: Chocolate -->
+                <div style="background: linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)), url('assets/images/categories/chocolate.jpg') center/cover no-repeat; border-radius: var(--border-radius); padding: 2rem; border-left: 4px solid var(--secondary); transition: all 0.3s ease;" onmouseover="this.style.transform='translateX(10px)'; this.style.boxShadow='var(--shadow-md)';" onmouseout="this.style.transform='translateX(0)'; this.style.boxShadow='none';">
+                    <div style="font-size: 2.5rem; margin-bottom: 1rem; font-weight: bold; color: #fff; text-shadow: 0 2px 8px rgba(0, 0, 0, 0.7);">CHOCOLATE</div>
+                    <h3 style="color: #fff; font-size: 1.2rem; margin-bottom: 0.8rem; text-shadow: 0 2px 6px rgba(0, 0, 0, 0.7);">Cómo se Produce el Chocolate</h3>
+                    <p style="color: #f0f0f0; font-size: 0.95rem; margin-bottom: 1.5rem; line-height: 1.6; text-shadow: 0 1px 4px rgba(0, 0, 0, 0.7);">De las vainas de cacao en la selva tropical hasta la barra que disfrutas. Un viaje de 11 pasos que transforma granos en delicia.</p>
+                    <a href="pages/chocolate.html" style="display: inline-block; background: var(--secondary); color: var(--white); padding: 0.8rem 1.5rem; border-radius: 8px; text-decoration: none; font-weight: 600; transition: all 0.3s ease;" onmouseover="this.style.backgroundColor='#ff5520';" onmouseout="this.style.backgroundColor='var(--secondary)';">
+                        Leer artículo →
+                    </a>
+                </div>
+
+                <!-- Artículo Destacado 2: Café (Proximamente) -->
+                <div style="background: linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)), url('assets/images/categories/cafe.jpg') center/cover no-repeat; border-radius: var(--border-radius); padding: 2rem; border-left: 4px solid var(--accent); transition: all 0.3s ease; backdrop-filter: blur(2px);" onmouseover="this.style.transform='translateX(10px)'; this.style.boxShadow='var(--shadow-md)';" onmouseout="this.style.transform='translateX(0)'; this.style.boxShadow='none';">
+                    <div style="font-size: 2.5rem; margin-bottom: 1rem; font-weight: bold; color: #fff; text-shadow: 0 2px 8px rgba(0, 0, 0, 0.7);">NESCAFÉ</div>
+                    <h3 style="color: #fff; font-size: 1.2rem; margin-bottom: 0.8rem; text-shadow: 0 2px 6px rgba(0, 0, 0, 0.7);">Cómo se Produce el Café</h3>
+                    <p style="color: #f0f0f0; font-size: 0.95rem; margin-bottom: 1.5rem; line-height: 1.6; text-shadow: 0 1px 4px rgba(0, 0, 0, 0.7);">Desde el cultivo en las montañas hasta tu taza de cada mañana. Descubre el proceso que hace posible tu café favorito.</p>
+                    <div style="display: inline-block; background: var(--gray); color: var(--white); padding: 0.8rem 1.5rem; border-radius: 8px; font-weight: 600; cursor: not-allowed;">
+                        Próximamente
+                    </div>
+                </div>
+
+                <!-- Artículo Destacado 3: Smartphone (Proximamente) -->
+                <div style="background: linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)), url('assets/images/categories/iphone.jpg') center/cover no-repeat; border-radius: var(--border-radius); padding: 2rem; border-left: 4px solid var(--primary); transition: all 0.3s ease;" onmouseover="this.style.transform='translateX(10px)'; this.style.boxShadow='var(--shadow-md)';" onmouseout="this.style.transform='translateX(0)'; this.style.boxShadow='none';">
+                    <div style="font-size: 2.5rem; margin-bottom: 1rem; font-weight: bold; color: #fff; text-shadow: 0 2px 8px rgba(0, 0, 0, 0.7);">IPHONE</div>
+                    <h3 style="color: #fff; font-size: 1.2rem; margin-bottom: 0.8rem; text-shadow: 0 2px 6px rgba(0, 0, 0, 0.7);">Cómo se Fabrica un Smartphone</h3>
+                    <p style="color: #f0f0f0; font-size: 0.95rem; margin-bottom: 1.5rem; line-height: 1.6; text-shadow: 0 1px 4px rgba(0, 0, 0, 0.7);">Desde los minerales en la tierra hasta la tecnología en tu bolsillo. Un dispositivo complejo en 8 fases.</p>
+                    <div style="display: inline-block; background: var(--gray); color: var(--white); padding: 0.8rem 1.5rem; border-radius: 8px; font-weight: 600; cursor: not-allowed;">
+                        Próximamente
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== ARTÍCULOS RECIENTES ==================== -->
+    <section style="padding: 3rem var(--spacing-lg); background-color: var(--light);">
+        <div class="section-container">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2rem;">
+                <h2 class="section-title" style="text-align: left; margin: 0;">Últimos Artículos</h2>
+                <a href="#" style="color: var(--secondary); font-weight: 600; text-decoration: none;">Ver más →</a>
+            </div>
+            
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+                <!-- Artículo 1 -->
+                <a href="#" style="text-decoration: none; color: inherit; display: block; transition: all 0.3s ease;">
+                    <div style="background: var(--white); border-radius: var(--border-radius); overflow: hidden; box-shadow: var(--shadow-md); transition: all 0.3s ease; cursor: pointer;" onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='var(--shadow-lg)'; this.children[0].style.filter='blur(5px)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='var(--shadow-md)'; this.children[0].style.filter='blur(0px)';">
+                        <div style="background: url('assets/images/articles/nescafe.jpg') center/cover no-repeat; padding: 2rem; text-align: center; font-size: 1.5rem; font-weight: bold; color: #6F4E37; height: 150px; transition: filter 0.3s ease;"></div>
+                        <div style="padding: 1.5rem;">
+                            <span style="background: rgba(255, 107, 53, 0.1); color: var(--secondary); padding: 0.4rem 0.8rem; border-radius: 20px; font-size: 0.85rem; font-weight: 600; display: inline-flex; align-items: center; gap: 0.4rem;"><img src="assets/icons/pizza-oscuro.svg" alt="" style="width: 0.9rem; height: 0.9rem;"> Alimentos</span>
+                            <h3 style="color: var(--primary); margin: 1rem 0 0.5rem 0; font-size: 1.3rem;">Cómo se Produce el Café</h3>
+                            <p style="color: var(--gray); font-size: 0.95rem; margin-bottom: 1rem;">Del grano a tu taza favorita - un proceso fascinante de 6 pasos.</p>
+                            <div style="display: flex; justify-content: space-between; font-size: 0.85rem; color: var(--gray);">
+                                <span>Próximamente</span>
+                                <span>7 min</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Artículo 2 -->
+                <a href="#" style="text-decoration: none; color: inherit; display: block; transition: all 0.3s ease;">
+                    <div style="background: var(--white); border-radius: var(--border-radius); overflow: hidden; box-shadow: var(--shadow-md); transition: all 0.3s ease; cursor: pointer;" onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='var(--shadow-lg)'; this.children[0].style.filter='blur(5px)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='var(--shadow-md)'; this.children[0].style.filter='blur(0px)';">
+                        <div style="background: url('assets/images/articles/iphone-2.jpg') center/cover no-repeat; padding: 2rem; text-align: center; color: #fff; font-weight: bold; font-size: 1.5rem; height: 150px; transition: filter 0.3s ease;"></div>
+                        <div style="padding: 1.5rem;">
+                            <span style="background: rgba(15, 35, 68, 0.1); color: var(--primary); padding: 0.4rem 0.8rem; border-radius: 20px; font-size: 0.85rem; font-weight: 600; display: inline-flex; align-items: center; gap: 0.4rem;"><img src="assets/icons/cpu-oscuro.svg" alt="" style="width: 0.9rem; height: 0.9rem;"> Tecnología</span>
+                            <h3 style="color: var(--primary); margin: 1rem 0 0.5rem 0; font-size: 1.3rem;">Cómo se Fabrica un Smartphone</h3>
+                            <p style="color: var(--gray); font-size: 0.95rem; margin-bottom: 1rem;">Desde la arena de silicio hasta el dispositivo en tu bolsillo.</p>
+                            <div style="display: flex; justify-content: space-between; font-size: 0.85rem; color: var(--gray);">
+                                <span>Próximamente</span>
+                                <span>10 min</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Artículo 3 -->
+                <a href="#" style="text-decoration: none; color: inherit; display: block; transition: all 0.3s ease;">
+                    <div style="background: var(--white); border-radius: var(--border-radius); overflow: hidden; box-shadow: var(--shadow-md); transition: all 0.3s ease; cursor: pointer;" onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='var(--shadow-lg)'; this.children[0].style.filter='blur(5px)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='var(--shadow-md)'; this.children[0].style.filter='blur(0px)';">
+                    <div style="background: url('assets/images/articles/galak.jpg') center/cover no-repeat; padding: 2rem; text-align: center; color: #333; font-weight: bold; font-size: 1.5rem; height: 150px; transition: filter 0.3s ease;"></div>
+                        <div style="padding: 1.5rem;">
+                            <span style="background: rgba(255, 107, 53, 0.1); color: var(--secondary); padding: 0.4rem 0.8rem; border-radius: 20px; font-size: 0.85rem; font-weight: 600; display: inline-flex; align-items: center; gap: 0.4rem;"><img src="assets/icons/pizza-oscuro.svg" alt="" style="width: 0.9rem; height: 0.9rem;"> Alimentos</span>
+                            <h3 style="color: var(--primary); margin: 1rem 0 0.5rem 0; font-size: 1.3rem;">Cómo se Produce el Chocolate</h3>
+                            <p style="color: var(--gray); font-size: 0.95rem; margin-bottom: 1rem;">De las vainas de cacao en la selva tropical hasta la barra que disfrutas.</p>
+                            <div style="display: flex; justify-content: space-between; font-size: 0.85rem; color: var(--gray);">
+                                <span>Próximamente</span>
+                                <span>9 min</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== TODAS LAS CATEGORÍAS ==================== -->
+    <section style="padding: 3rem var(--spacing-lg); background-color: var(--white);">
+        <div class="section-container">
+            <h2 class="section-title">Explora por Categoría</h2>
+            <p class="section-subtitle">Descubre artículos sobre cómo se fabrica lo que te interesa</p>
+            
+            <div class="categories-grid">
+                <a href="pages/chocolate.html" class="category-card">
+                    <div class="category-icon" style="background: linear-gradient(135deg, #ff6b35, #ffa500); color: #fff; font-weight: bold; display: flex; align-items: center; justify-content: center;">COMIDA</div>
+                    <h3>Alimentos</h3>
+                    <p>1 artículo</p>
+                </a>
+
+                <a href="#" class="category-card">
+                    <div class="category-icon" style="background: linear-gradient(135deg, #0f2344, #1a3f5a); color: #fff; font-weight: bold; display: flex; align-items: center; justify-content: center;">TECH</div>
+                    <h3>Tecnología</h3>
+                    <p>Próximamente</p>
+                </a>
+
+                <a href="#" class="category-card">
+                    <div class="category-icon" style="background: linear-gradient(135deg, #9b59b6, #8e44ad); color: #fff; font-weight: bold; display: flex; align-items: center; justify-content: center;">TELA</div>
+                    <h3>Textiles</h3>
+                    <p>Próximamente</p>
+                </a>
+
+                <a href="#" class="category-card">
+                    <div class="category-icon" style="background: linear-gradient(135deg, #e74c3c, #c0392b); color: #fff; font-weight: bold; display: flex; align-items: center; justify-content: center;">AUTO</div>
+                    <h3>Automoción</h3>
+                    <p>Próximamente</p>
+                </a>
+
+                <a href="#" class="category-card">
+                    <div class="category-icon" style="background: linear-gradient(135deg, #e67e22, #d35400); color: #fff; font-weight: bold; display: flex; align-items: center; justify-content: center;">OBRA</div>
+                    <h3>Construcción</h3>
+                    <p>Próximamente</p>
+                </a>
+
+                <a href="#" class="category-card">
+                    <div class="category-icon" style="background: linear-gradient(135deg, #f39c12, #e67e22); color: #fff; font-weight: bold; display: flex; align-items: center; justify-content: center;">CINE</div>
+                    <h3>Entretenimiento</h3>
+                    <p>Próximamente</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== SOBRE LO CURIOSO ==================== -->
+    <section style="padding: 3rem var(--spacing-lg); background-color: var(--light);">
+        <div class="section-container">
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center;">
+                <div>
+                    <h2 style="color: var(--primary); font-size: 2rem; margin-bottom: 1.5rem;">¿Qué es Lo Curioso?</h2>
+                    <p style="color: var(--gray); font-size: 1.05rem; margin-bottom: 1rem; line-height: 1.8;">
+                        Lo Curioso es una plataforma educativa donde descubrirás cómo se fabrican las cosas que amas. 
+                        Desde la comida que comes hasta el dispositivo que usas, aquí encontrarás explicaciones claras, 
+                        fascinantes y fáciles de entender sobre los procesos más interesantes del mundo.
+                    </p>
+                    <p style="color: var(--gray); font-size: 1.05rem; margin-bottom: 1rem; line-height: 1.8;">
+                        Nuestro objetivo es satisfacer tu curiosidad y hacerte ver el mundo de una manera diferente. 
+                        Cada artículo está lleno de datos sorprendentes, imágenes, videos y referencias científicas.
+                    </p>
+                    <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+                        <div style="background: var(--white); padding: 1.5rem; border-radius: var(--border-radius); border-left: 4px solid var(--secondary);">
+                            <div style="font-size: 1.5rem; font-weight: bold; color: var(--secondary);">1</div>
+                            <div style="font-size: 0.9rem; color: var(--gray); margin-top: 0.3rem;">Artículo Destacado</div>
+                        </div>
+                        <div style="background: var(--white); padding: 1.5rem; border-radius: var(--border-radius); border-left: 4px solid var(--accent);">
+                            <div style="font-size: 1.5rem; font-weight: bold; color: var(--accent);">6</div>
+                            <div style="font-size: 0.9rem; color: var(--gray); margin-top: 0.3rem;">Categorías</div>
+                        </div>
+                        <div style="background: var(--white); padding: 1.5rem; border-radius: var(--border-radius); border-left: 4px solid var(--primary);">
+                            <div style="font-size: 1.5rem; font-weight: bold; color: var(--primary);">100%</div>
+                            <div style="font-size: 0.9rem; color: var(--gray); margin-top: 0.3rem;">Educativo</div>
+                        </div>
+                    </div>
+                </div>
+                <div style="text-align: center; font-size: 3rem; font-weight: bold; color: var(--primary);">
+                    CURIOSIDAD
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer id="footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Lo Curioso</h3>
+                    <p>Plataforma dedicada a compartir los fascinantes procesos de cómo se fabrican las cosas.</p>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Navegación</h3>
+                    <ul>
+                        <li><a href="#categorias">Categorías</a></li>
+                        <li><a href="pages/sobre-nosotros.html">Sobre Nosotros</a></li>
+                        <li><a href="pages/contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Legal</h3>
+                    <ul>
+                        <li><a href="legal/terminos.html">Términos y Condiciones</a></li>
+                        <li><a href="legal/privacidad.html">Política de Privacidad</a></li>
+                        <li><a href="legal/cookies.html">Política de Cookies</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Síguenos</h3>
+                    <ul>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">YouTube</a></li>
+                        <li><a href="#">TikTok</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-divider"></div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Lo Curioso. Todos los derechos reservados.</p>
+                <p>Artículos claros sobre procesos de fabricación, ciencia e industria.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JAVASCRIPT PRINCIPAL -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

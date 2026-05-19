@@ -1,0 +1,220 @@
+/* ==================== ICON SYSTEM ==================== */
+
+/* Base Icon Styles */
+.icon {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    vertical-align: -0.125em;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* Size Variants */
+.icon-sm {
+    width: 0.75em;
+    height: 0.75em;
+}
+
+.icon-md {
+    width: 1.5em;
+    height: 1.5em;
+}
+
+.icon-lg {
+    width: 2em;
+    height: 2em;
+}
+
+.icon-xl {
+    width: 3em;
+    height: 3em;
+}
+
+/* Navigation Icons */
+.icon-home {
+    background-image: url('../icons/home.svg');
+}
+
+.icon-categories {
+    background-image: url('../icons/categories.svg');
+}
+
+.icon-contact {
+    background-image: url('../icons/contact.svg');
+}
+
+.icon-about {
+    background-image: url('../icons/about.svg');
+}
+
+.icon-menu {
+    background-image: url('../icons/menu.svg');
+}
+
+.icon-search {
+    background-image: url('../icons/search.svg');
+}
+
+/* Article Icons */
+.icon-chocolate {
+    background-image: url('../icons/chocolate.svg');
+}
+
+.icon-coffee {
+    background-image: url('../icons/coffee.svg');
+}
+
+.icon-smartphone {
+    background-image: url('../icons/smartphone.svg');
+}
+
+.icon-car {
+    background-image: url('../icons/car.svg');
+}
+
+.icon-textile {
+    background-image: url('../icons/textile.svg');
+}
+
+.icon-construction {
+    background-image: url('../icons/construction.svg');
+}
+
+.icon-entertainment {
+    background-image: url('../icons/entertainment.svg');
+}
+
+/* Metadata Icons */
+.icon-author {
+    background-image: url('../icons/author.svg');
+}
+
+.icon-calendar {
+    background-image: url('../icons/calendar.svg');
+}
+
+.icon-clock {
+    background-image: url('../icons/clock.svg');
+}
+
+.icon-bookmark {
+    background-image: url('../icons/bookmark.svg');
+}
+
+.icon-share {
+    background-image: url('../icons/share.svg');
+}
+
+.icon-facebook {
+    background-image: url('../icons/facebook.svg');
+}
+
+.icon-twitter {
+    background-image: url('../icons/twitter.svg');
+}
+
+.icon-instagram {
+    background-image: url('../icons/instagram.svg');
+}
+
+.icon-email {
+    background-image: url('../icons/email.svg');
+}
+
+/* Article Content Icons */
+.icon-raw-material {
+    background-image: url('../icons/raw-material.svg');
+}
+
+.icon-duration {
+    background-image: url('../icons/duration.svg');
+}
+
+.icon-stages {
+    background-image: url('../icons/stages.svg');
+}
+
+.icon-note {
+    background-image: url('../icons/note.svg');
+}
+
+.icon-fact {
+    background-image: url('../icons/fact.svg');
+}
+
+.icon-info {
+    background-image: url('../icons/info.svg');
+}
+
+.icon-references {
+    background-image: url('../icons/references.svg');
+}
+
+/* Footer Icons */
+.icon-location {
+    background-image: url('../icons/location.svg');
+}
+
+.icon-phone {
+    background-image: url('../icons/phone.svg');
+}
+
+.icon-globe {
+    background-image: url('../icons/globe.svg');
+}
+
+/* Utility Icons */
+.icon-arrow-right {
+    background-image: url('../icons/arrow-right.svg');
+}
+
+.icon-arrow-left {
+    background-image: url('../icons/arrow-left.svg');
+}
+
+.icon-chevron-down {
+    background-image: url('../icons/chevron-down.svg');
+}
+
+.icon-close {
+    background-image: url('../icons/close.svg');
+}
+
+.icon-check {
+    background-image: url('../icons/check.svg');
+}
+
+.icon-star {
+    background-image: url('../icons/star.svg');
+}
+
+.icon-heart {
+    background-image: url('../icons/heart.svg');
+}
+
+.icon-success {
+    background-image: url('../icons/success.svg');
+}
+
+.icon-warning {
+    background-image: url('../icons/warning.svg');
+}
+
+.icon-error {
+    background-image: url('../icons/error.svg');
+}
+
+/* Responsive Icon Sizing */
+@media (max-width: 768px) {
+    .icon-lg {
+        width: 1.5em;
+        height: 1.5em;
+    }
+
+    .icon-xl {
+        width: 2em;
+        height: 2em;
+    }
+}

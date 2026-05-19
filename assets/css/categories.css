@@ -1,0 +1,63 @@
+/* ============================================
+   ESTILOS DE LA SECCIÓN DE CATEGORÍAS
+   ============================================ */
+
+.categories {
+    padding: var(--spacing-2xl) var(--spacing-lg);
+    background-color: var(--white);
+}
+
+.categories-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+/* --- TARJETAS DE CATEGORÍAS --- */
+.category-card {
+    background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+    color: var(--white);
+    padding: var(--spacing-lg);
+    border-radius: var(--border-radius);
+    text-align: center;
+    cursor: pointer;
+    transition: all var(--transition-normal);
+    text-decoration: none;
+    position: relative;
+    overflow: hidden;
+}
+
+.category-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, var(--secondary), var(--accent));
+    transition: left var(--transition-normal);
+    z-index: -1;
+}
+
+.category-card:hover::before {
+    left: 0;
+}
+
+.category-card:hover {
+    transform: scale(1.05);
+}
+
+.category-icon {
+    font-size: 3rem;
+    margin-bottom: var(--spacing-md);
+}
+
+.category-card h3 {
+    font-size: var(--font-size-xl);
+    margin-bottom: var(--spacing-xs);
+}
+
+.category-card p {
+    font-size: var(--font-size-sm);
+    opacity: 0.95;
+}

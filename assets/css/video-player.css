@@ -1,0 +1,30 @@
+.video-placeholder {
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+    background: #000;
+}
+
+.video-placeholder .plyr {
+    --plyr-color-main: #ff6b35;
+    --plyr-video-controls-background: linear-gradient(to top, rgba(15, 35, 68, 0.92), rgba(15, 35, 68, 0.35));
+    --plyr-menu-background: #0f2344;
+    --plyr-menu-color: #ffffff;
+    --plyr-tooltip-background: #ffffff;
+    --plyr-tooltip-color: #0f2344;
+    border-radius: var(--border-radius);
+}
+
+.video-placeholder .plyr__control--overlaid {
+    background: rgba(255, 107, 53, 0.9);
+    border: 2px solid rgba(255, 255, 255, 0.85);
+    transform: scale(1.1);
+}
+
+.video-placeholder .plyr__control--overlaid:hover {
+    background: #ff5520;
+}
+
+.video-placeholder .plyr--video .plyr__controls {
+    padding-top: 0.85rem;
+}

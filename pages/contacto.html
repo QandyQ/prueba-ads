@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contacto - Lo Curioso. Envíanos tus preguntas, sugerencias o consultas sobre nuestros artículos.">
+    <meta name="keywords" content="contacto, email, consulta, lo curioso">
+    
+    <title>Contacto - Lo Curioso</title>
+    
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <style>
+        .contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: var(--primary);
+            font-weight: 600;
+            font-size: 0.95rem;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            font-family: inherit;
+            font-size: 0.95rem;
+            transition: all 0.3s ease;
+            box-sizing: border-box;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--secondary);
+            box-shadow: 0 0 0 3px rgba(255, 107, 53, 0.1);
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 150px;
+        }
+
+        .submit-btn {
+            background: var(--secondary);
+            color: var(--white);
+            padding: 1rem 2.5rem;
+            border: none;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            width: 100%;
+        }
+
+        .submit-btn:hover {
+            background: #ff5520;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(255, 107, 53, 0.3);
+        }
+
+        .contact-info {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .info-card {
+            background: var(--light);
+            padding: 2rem;
+            border-radius: var(--border-radius);
+            text-align: center;
+            border-left: 4px solid var(--secondary);
+        }
+
+        .info-card h3 {
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+        }
+
+        .info-card p {
+            color: var(--gray);
+            font-size: 0.95rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- ==================== HEADER ==================== -->
+    <header>
+        <div class="header-container">
+            <a href="../index.html" class="logo">
+                <div class="logo-icon">LC</div>
+                <span>Lo Curioso</span>
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="../index.html#categorias">Categorías</a></li>
+                    <li><a href="../pages/sobre-nosotros.html">Sobre Nosotros</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ==================== PAGE TITLE ==================== -->
+    <section style="background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%); color: var(--white); padding: 3rem var(--spacing-lg); text-align: center;">
+        <h1 style="font-size: 2rem; margin-bottom: 0.5rem;">Contacto</h1>
+        <p style="font-size: 1.1rem;">¿Preguntas o sugerencias? Nos encantaría escucharte.</p>
+    </section>
+
+    <!-- ==================== CONTACT FORM ==================== -->
+    <section style="padding: 4rem var(--spacing-lg); background-color: var(--white);">
+        <div class="section-container">
+            <div class="contact-form">
+                <form style="background: var(--light); padding: 2.5rem; border-radius: var(--border-radius);">
+                    <div class="form-group">
+                        <label for="nombre">Nombre completo *</label>
+                        <input type="text" id="nombre" name="nombre" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Correo electrónico *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="tema">Tema *</label>
+                        <input type="text" id="tema" name="tema" placeholder="ej: Sugerencia de artículo, Pregunta sobre contenido" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="mensaje">Mensaje *</label>
+                        <textarea id="mensaje" name="mensaje" required></textarea>
+                    </div>
+
+                    <button type="submit" class="submit-btn">Enviar Mensaje</button>
+                </form>
+
+                <p style="text-align: center; margin-top: 1.5rem; color: var(--gray); font-size: 0.9rem;">
+                    * Campos obligatorios. Te responderemos lo antes posible.
+                </p>
+            </div>
+
+            <!-- CONTACT INFO CARDS -->
+            <div class="contact-info">
+                <div class="info-card">
+                    <h3>Email</h3>
+                    <p><a href="mailto:hola@locurioso.com" style="color: var(--secondary); text-decoration: none;">hola@locurioso.com</a></p>
+                </div>
+
+                <div class="info-card">
+                    <h3>Redes Sociales</h3>
+                    <p><a href="#" style="color: var(--secondary); text-decoration: none;">@locurioso</a> en Instagram</p>
+                </div>
+
+                <div class="info-card">
+                    <h3>Respuesta</h3>
+                    <p>Respondemos en 24-48 horas hábiles</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer id="footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Lo Curioso</h3>
+                    <p>Plataforma dedicada a compartir los fascinantes procesos de cómo se fabrican las cosas.</p>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Navegación</h3>
+                    <ul>
+                        <li><a href="../index.html#categorias">Categorías</a></li>
+                        <li><a href="../pages/sobre-nosotros.html">Sobre Nosotros</a></li>
+                        <li><a href="../pages/contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Legal</h3>
+                    <ul>
+                        <li><a href="../legal/terminos.html">Términos y Condiciones</a></li>
+                        <li><a href="../legal/privacidad.html">Política de Privacidad</a></li>
+                        <li><a href="../legal/cookies.html">Política de Cookies</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Síguenos</h3>
+                    <ul>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">YouTube</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-divider"></div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Lo Curioso. Todos los derechos reservados.</p>
+                <p>Artículos claros sobre procesos de fabricación, ciencia e industria.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JAVASCRIPT PRINCIPAL -->
+    <script src="../assets/js/main.js"></script>
+</body>
+</html>
