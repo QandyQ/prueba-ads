@@ -40,25 +40,30 @@
     <!-- ==================== HERO DESTACADO - ARTÍCULO PRINCIPAL ==================== -->
     <section style="background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%); color: var(--white); padding: 3rem var(--spacing-lg);">
         <div class="section-container">
-            <a href="pages/chocolate.html" style="text-decoration: none; color: inherit; display: block;">
-                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; align-items: center;">
-                    <div>
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; align-items: center;">
+                <div>
+                    <a href="pages/chocolate.html" style="text-decoration: none; color: inherit; display: inline-block;">
                         <span style="background-color: rgba(255, 107, 53, 0.3); padding: 0.5rem 1rem; border-radius: 20px; font-size: 0.9rem; display: inline-flex; align-items: center; gap: 0.5rem;"><img src="assets/icons/pizza.svg" alt="" style="width: 1rem; height: 1rem;"> Alimentos</span>
                         <h1 style="font-size: 2.5rem; margin: 1rem 0; font-weight: 800;">Descubre cómo se fabrican las cosas que usas cada día</h1>
-                        <p style="font-size: 1.1rem; opacity: 0.95; margin-bottom: 1.5rem;">Explora los procesos fascinantes detrás de los productos cotidianos. Desde la comida que comes hasta la tecnología que usas, aquí están las historias reales de cómo se hacen.</p>
-                        <div style="display: flex; gap: 2rem; flex-wrap: wrap; font-size: 0.95rem;">
-                            <span style="display: inline-flex; align-items: center; gap: 0.5rem;"><img src="assets/icons/calendar-days.svg" alt="" style="width: 1.1rem; height: 1.1rem;"> Hace 2 días</span>
-                            <span style="display: inline-flex; align-items: center; gap: 0.5rem;"><img src="assets/icons/clock.svg" alt="" style="width: 1.1rem; height: 1.1rem;"> 8 min lectura</span>
-                            <span style="display: inline-flex; align-items: center; gap: 0.5rem;"><img src="assets/icons/graduation-cap.svg" alt="" style="width: 1.1rem; height: 1.1rem;"> Educativo</span>
-                        </div>
+                    </a>
+                    <p style="font-size: 1.1rem; opacity: 0.95; margin-bottom: 1.5rem;">Explora los procesos fascinantes detrás de los productos cotidianos. Desde la comida que comes hasta la tecnología que usas, aquí están las historias reales de cómo se hacen.</p>
+                    <div style="display: flex; gap: 2rem; flex-wrap: wrap; font-size: 0.95rem; margin-bottom: 1.5rem;">
+                        <span style="display: inline-flex; align-items: center; gap: 0.5rem;"><img src="assets/icons/calendar-days.svg" alt="" style="width: 1.1rem; height: 1.1rem;"> Hace 2 días</span>
+                        <span style="display: inline-flex; align-items: center; gap: 0.5rem;"><img src="assets/icons/clock.svg" alt="" style="width: 1.1rem; height: 1.1rem;"> 8 min lectura</span>
+                        <span style="display: inline-flex; align-items: center; gap: 0.5rem;"><img src="assets/icons/graduation-cap.svg" alt="" style="width: 1.1rem; height: 1.1rem;"> Educativo</span>
                     </div>
-                    <div style="background: rgba(255, 255, 255, 0.1); border-radius: var(--border-radius); padding: 0.75rem; backdrop-filter: blur(10px); overflow: hidden; min-height: 280px;">
-                        <video autoplay muted loop playsinline preload="auto" style="width: 100%; height: 100%; min-height: 260px; object-fit: cover; border-radius: calc(var(--border-radius) - 4px); display: block;">
-                            <source src="assets/videos/como hacer chocolate.mp4" type="video/mp4">
-                        </video>
+                    <a href="pages/chocolate.html" style="display: inline-flex; align-items: center; gap: 0.5rem; background: var(--secondary); color: var(--white); padding: 0.9rem 1.4rem; border-radius: 999px; text-decoration: none; font-weight: 700; box-shadow: var(--shadow-md); transition: transform 0.2s ease, background-color 0.2s ease;" onmouseover="this.style.transform='translateY(-2px)'; this.style.backgroundColor='#ff5520';" onmouseout="this.style.transform='translateY(0)'; this.style.backgroundColor='var(--secondary)';">Ir al artículo</a>
+                </div>
+                <div style="background: rgba(255, 255, 255, 0.1); border-radius: var(--border-radius); padding: 0.75rem; backdrop-filter: blur(10px); overflow: hidden; min-height: 280px; position: relative;">
+                    <video id="hero-video" autoplay muted loop playsinline preload="auto" style="width: 100%; height: 100%; min-height: 260px; object-fit: cover; border-radius: calc(var(--border-radius) - 4px); display: block;">
+                        <source src="assets/videos/como hacer chocolate.mp4" type="video/mp4">
+                    </video>
+                    <div style="position: absolute; left: 1rem; right: 1rem; bottom: 1rem; display: flex; gap: 0.75rem; flex-wrap: wrap; justify-content: flex-end; pointer-events: none;">
+                        <button id="hero-video-mute" type="button" style="pointer-events: auto; border: 0; background: rgba(15, 35, 68, 0.9); color: var(--white); padding: 0.8rem 1rem; border-radius: 999px; font-weight: 700; cursor: pointer; box-shadow: var(--shadow-md);">Activar sonido</button>
+                        <a href="pages/chocolate.html" style="pointer-events: auto; background: rgba(255, 255, 255, 0.95); color: var(--primary); padding: 0.8rem 1rem; border-radius: 999px; text-decoration: none; font-weight: 700; box-shadow: var(--shadow-md);">Ir al video</a>
                     </div>
                 </div>
-            </a>
+            </div>
         </div>
     </section>
 
@@ -293,6 +298,31 @@
     </footer>
 
     <!-- JAVASCRIPT PRINCIPAL -->
+    <script>
+        (function () {
+            const video = document.getElementById('hero-video');
+            const muteButton = document.getElementById('hero-video-mute');
+
+            if (!video || !muteButton) {
+                return;
+            }
+
+            const syncButtonLabel = () => {
+                muteButton.textContent = video.muted ? 'Activar sonido' : 'Silenciar';
+            };
+
+            muteButton.addEventListener('click', () => {
+                video.muted = !video.muted;
+                if (!video.muted) {
+                    video.volume = 1;
+                }
+                syncButtonLabel();
+            });
+
+            video.addEventListener('play', syncButtonLabel);
+            syncButtonLabel();
+        }());
+    </script>
     <script src="assets/js/main.js"></script>
 </body>
 </html>
