@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
     initNavigation();
     initScrollAnimations();
     initLatestArticlesBackground();
+    initRewardedAdButton();
 });
 
 // ============================================
@@ -123,6 +124,37 @@ function initLatestArticlesBackground() {
 
     section.addEventListener('mouseleave', resetBackground);
     resetBackground();
+}
+
+// ============================================
+// REWARDED AD DE MONETAG
+// ============================================
+function initRewardedAdButton() {
+    const rewardedAdButton = document.getElementById('rewarded-ad-button');
+
+    if (!rewardedAdButton) {
+        return;
+    }
+
+    rewardedAdButton.addEventListener('click', async () => {
+        if (typeof show_11057393 !== 'function') {
+            showNotification('El anuncio no está disponible en este momento.', 'warning');
+            return;
+        }
+
+        rewardedAdButton.disabled = true;
+        rewardedAdButton.textContent = 'Cargando...';
+
+        try {
+            await show_11057393('pop');
+            showNotification('Anuncio completado. Aquí puedes dar la recompensa.', 'success');
+        } catch (error) {
+            logError('Error al mostrar el anuncio recompensado', error);
+        } finally {
+            rewardedAdButton.disabled = false;
+            rewardedAdButton.textContent = 'Ver anuncio';
+        }
+    });
 }
 
 // ============================================
